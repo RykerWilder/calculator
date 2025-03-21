@@ -25,10 +25,20 @@ while True:
         for number in factorList:
             result += number;
         print("Il risultato dell'addizione è: ", result);
+
     elif action == "2":
-        a = float(input("Inserisci il minuendo: "));
-        b = float(input("Inserisci il sottraendo: "));
-        print("Il risultato della sottrazione è: ", str(a - b));
+        factors = int(input("Di quanti fattori ha bisogno la tua sottrazione?: "));
+        factorList = [];
+        result = 0;
+
+        for factor in range(factors):
+            item = int(input(f"Inserisci il {factor + 1} numero "));
+            factorList.append(item);
+
+        for number in factorList:
+            result -= number;
+        print("Il risultato della sottrazione è: ", result);
+
     elif action == "3":
         a = float(input("Inserisci il primo fattore: "));
         b = float(input("Inserisci il secondo fattore: "));
