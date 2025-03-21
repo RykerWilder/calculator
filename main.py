@@ -40,9 +40,18 @@ while True:
         print("Il risultato della sottrazione è: ", result);
 
     elif action == "3":
-        a = float(input("Inserisci il primo fattore: "));
-        b = float(input("Inserisci il secondo fattore: "));
-        print("Il risultato della moltiplicazione è: ", str(a * b));
+        factors = int(input("Di quanti fattori ha bisogno la tua moltiplicazione?: "));
+        factorList = [];
+        result = 1;
+
+        for factor in range(factors):
+            item = int(input(f"Inserisci il {factor + 1} numero "));
+            factorList.append(item);
+
+        for number in factorList:
+            result = result * number;
+        print("Il risultato della moltiplicazione è: ", result);
+
     elif action == "4":
         a = float(input("Inserisci il dividendo: "));
         b = float(input("Inserisci il divisore: "));
