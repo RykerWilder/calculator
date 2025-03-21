@@ -19,7 +19,7 @@ while True:
         result = 0
 
         for factor in range(factors):
-            item = int(input(f"Inserisci il {factor + 1} numero "))
+            item = int(input(f"Inserisci il {factor + 1} numero: "))
             factorList.append(item)
 
         for number in factorList:
@@ -32,7 +32,7 @@ while True:
         result = 0
 
         for factor in range(factors):
-            item = int(input(f"Inserisci il {factor + 1} numero "))
+            item = int(input(f"Inserisci il {factor + 1} numero: "))
             factorList.append(item)
 
         for number in factorList:
@@ -45,7 +45,7 @@ while True:
         result = 1
 
         for factor in range(factors):
-            item = int(input(f"Inserisci il {factor + 1} numero "))
+            item = int(input(f"Inserisci il {factor + 1} numero: "))
             factorList.append(item)
 
         for number in factorList:
@@ -56,9 +56,11 @@ while True:
         a = float(input("Inserisci il dividendo: "))
         b = float(input("Inserisci il divisore: "))
         print("Il risultato della divisione è: ", str(a / b))
+
     elif action == "5":
         a = float(input("Inserisci il radicando: "))
         print("Il risultato della radice quadrata è: ", str(sqrt(a)))
+
     elif action == 'ESC':
         print("Hai selezionato 'uscire dal programma', a presto!")
         break
