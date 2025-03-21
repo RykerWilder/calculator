@@ -6,12 +6,12 @@ menu_message = """
     3. Per effettuare una moltiplicazione.
     4. Per effettuare una divisione.
     5. Per effettuare una radice quadrata.
-    6. Per uscire dal programma.
+    ESC Per uscire dal programma.
 """
 
 while True:
     print(menu_message);
-    action = input("Seleziona un'operazione da effettuare: ")
+    action = input("Seleziona un'operazione da effettuare: ").upper()
 
     if action == "1":
         factors = int(input("Di quanti fattori ha bisogno la tua somma?: "))
@@ -59,6 +59,6 @@ while True:
     elif action == "5":
         a = float(input("Inserisci il radicando: "))
         print("Il risultato della radice quadrata è: ", str(sqrt(a)))
-    elif action == '6':
+    elif action == 'ESC':
         print("Hai selezionato 'uscire dal programma', a presto!")
         break
