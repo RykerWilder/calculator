@@ -1,4 +1,5 @@
 # Python Calculator
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 
 This is a simple calculator implemented in Python that allows you to perform basic operations such as addition, subtraction, multiplication, division and square root.
 
