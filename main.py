@@ -43,7 +43,7 @@ while True:
         factors = int(input("Di quanti fattori ha bisogno la tua moltiplicazione?: "))
         factorList = []
         result = 1
-
+        
         for factor in range(factors):
             item = int(input(f"Inserisci il {factor + 1} numero: "))
             factorList.append(item)
@@ -55,6 +55,10 @@ while True:
     elif action == "4":
         a = float(input("Inserisci il dividendo: "))
         b = float(input("Inserisci il divisore: "))
+
+        if b == 0:
+            print('Non puoi dividere un numero per 0!')
+
         print("Il risultato della divisione è: ", str(a / b))
 
     elif action == "5":
